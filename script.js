@@ -1,116 +1,100 @@
-let words = document.querySelectorAll(".word");
-words.forEach((word) => {
-  let letters = word.textContent.split("");
-  word.textContent = "";
-  letters.forEach((letter) => {
-    let span = document.createElement("span");
-    span.textContent = letter;
-    span.className = "letter";
-    word.append(span);
-  });
-});
+document.addEventListener("DOMContentLoaded", () => {
+  // --- Mobile Menu Toggle ---
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navlist = document.querySelector(".navlist");
 
-let currentWordIndex = 0;
-let maxWordIndex = words.length - 1;
-words[currentWordIndex].style.opacity = "1";
-
-let changeText = () => {
-  let currentWord = words[currentWordIndex];
-  let nextWord =
-    currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
-
-  Array.from(currentWord.children).forEach((letter, i) => {
-    setTimeout(() => {
-      letter.className = "letter out";
-    }, i * 80);
+  menuToggle.addEventListener("click", () => {
+    navlist.classList.toggle("active");
   });
 
-  nextWord.style.opacity = "1";
-
-  Array.from(nextWord.children).forEach((letter, i) => {
-    letter.className = "letter behind";
-    setTimeout(() => {
-      letter.className = "letter in";
-    }, 340 + i * 80);
+  // Close navlist when a link is clicked (for mobile)
+  navlist.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navlist.classList.remove("active");
+    });
   });
 
-  currentWordIndex =
-    currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
-};
-changeText();
-setInterval(changeText, 3000);
+  // --- "Change Text" Animation (Placeholder for dynamic text) ---
+  const words = [
+    "MERN Stack Developer",
+    "Full-Stack Developer",
+    "Frontend Developer",
+    "Backend Developer",
+  ];
+  let i = 0;
+  const wordSpan = document.querySelector(".change-text .word");
 
-//circle skill///////////////////////////////////////////
-
-const circles = document.querySelectorAll(".circle");
-circles.forEach((circle) => {
-  let dots = circle.getAttribute("data-dots");
-  let marked = circle.getAttribute("data-percent");
-  let percent = Math.floor((dots * marked) / 100);
-  let points = "";
-  let rotate = 360 / dots;
-
-  for (let i = 0; i < dots; i++) {
-    points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
+  // Function to update the word
+  function changeWord() {
+    wordSpan.textContent = words[i];
+    i = (i + 1) % words.length;
   }
-  circle.innerHTML = points;
-  const pointMarked = circle.querySelectorAll(".points");
-  for (let i = 0; i < percent; i++) {
-    pointMarked[i].classList.add("marked");
-  }
-});
 
-//active menu-----------//
-let menuLi = document.querySelectorAll("header ul li a");
-let section = document.querySelectorAll("section");
+  setInterval(changeWord, 3000);
+  changeWord();
 
-function activeMenu() {
-  let len = section.length;
-  while (--len && window.scrollY + 97 < section[len].offsetTop) {}
-  menuLi.forEach((sec) => sec.classList.remove("active"));
-  menuLi[len].classList.add("active");
-}
+  // --- Active Navigation Link Scrolling ---
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".navlist a");
 
-activeMenu();
-window.addEventListener("scroll", activeMenu);
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (scrollY >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id");
+      }
+    });
 
-// sticky navbar----------------------------//
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").includes(current)) {
+        link.classList.add("active");
+      }
+    });
+  });
 
-const header = document.querySelector("header");
-window.addEventListener("scroll", function () {
-  header.classList.toggle("sticky", window.scrollY > 50);
-});
+  // --- Project Filtering ---
+  const filterButtons = document.querySelectorAll(".filter-buttons .btn");
+  const portfolioItems = document.querySelectorAll(
+    ".protfolio-gallery .port-box"
+  );
 
-// toggle icon  navbar----------------------------//
-let menuIcon = document.querySelector("#menu-icon");
-let navlsit = document.querySelector(".navlist");
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
 
-menuIcon.onclick = () => {
-  menuIcon.classList.toggle("bx-x");
-  navlsit.classList.toggle("open");
-};
+      const filter = button.dataset.filter;
 
-window.onscroll = () => {
-  menuIcon.classList.remove("bx-x");
-  navlsit.classList.remove("open");
-};
+      portfolioItems.forEach((item) => {
+        if (filter === "all" || item.dataset.filter === filter) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
 
-// parallax----------------------------//
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show-items");
-    } else {
-      entry.target.classList.remove("show-items");
-    }
+  // --- Contact Form Submission ---
+  const contactForm = document.getElementById("contact-form");
+  const successMessage = document.getElementById("success-message");
+
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault(); // Prevent default form submission
+
+    contactForm.style.display = "none";
+    successMessage.style.display = "block";
+
+    contactForm.reset();
   });
 });
 
-const scrollScale = document.querySelectorAll(".scroll-scale");
-scrollScale.forEach((el) => observer.observe(el));
-
-const scrollBottom = document.querySelectorAll(".scroll-bottom");
-scrollBottom.forEach((el) => observer.observe(el));
-
-const scrollTop = document.querySelectorAll(".scroll-top");
-scrollTop.forEach((el) => observer.observe(el));
+document.addEventListener("DOMContentLoaded", function () {
+  const yearSpan = document.getElementById("current-year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+});

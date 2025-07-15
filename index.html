@@ -3,52 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/jpeg" href="./img/favicon.jpeg" />
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Harshit Sharma - MERN Stack Developer</title>
+      <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link href="./styles.css" rel="stylesheet">
   </head>
   <body>
-    <!--header site-->
     <header>
       <div class="logo"><span>H</span>arshit.</div>
       <ul class="navlist">
-        <li><a href="#home" style="--i: 1">Home</a></li>
-        <li><a href="#about" style="--i: 2">About</a></li>
-        <li><a href="#services" style="--i: 3">Services</a></li>
-        <li><a href="#skills" style="--i: 4">Skills</a></li>
-        <li><a href="#portfolio" style="--i: 5">Portfolio</a></li>
-        <li><a href="#certifications" style="--i: 6">Certifications</a></li>
-        <li><a href="#contact" style="--i: 6">Contact</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <div id="menu-icon" class="bx bx-menu"></div>
+      <div class="menu-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
     </header>
 
-    <!-- home section --------------------------------->
-    <section id="home" class="home">
-      <div class="home-content scroll-scale">
-        <h1>Hi ! I'm Harshit Sharma</h1>
+    <section id="home" class="home bg-primary">
+      <div class="home-content">
+        <h1>Hi! I'm <span>Harshit Sharma</span></h1>
         <div class="change-text">
-          <h3>And I'm</h3>
-          <h3>
-            <span class="word">Software&nbsp;Developer</span>
-            <span class="word">Full&nbsp;Stack&nbsp; Developer</span>
-            <span class="word">UX/UI&nbsp; Designer</span>
-            <span class="word">Frontend&nbsp; Developer</span>
-            <span class="word">Backend &nbsp;Developer</span>
-          </h3>
+          <h3>And I'm a <span class="word">MERN Stack Developer</span></h3>
         </div>
         <p class="profile-description">
-          Aspiring Full-Stack Developer with a strong foundation in designing
-          and developing web applications. Skilled in modern front-end
-          frameworks like React and Angular, and familiar with back-end
-          technologies such as Node.js and Django. Proficient in creating APIs
-          and managing databases like MongoDB. Eager to apply knowledge to build
-          user-centric solutions and contribute to impactful projects
+          Full-Stack Developer specializing in the MERN stack with experience in
+          building scalable web applications. Proficient in React.js for
+          frontend development, Node.js with Express for backend services, and
+          MongoDB for database management.
         </p>
+
         <div class="info-box">
           <div class="email-info">
             <h5>Email:</h5>
@@ -56,245 +51,167 @@
           </div>
           <div class="github-info">
             <h5>GitHub:</h5>
-            <a
-              href="https://github.com/sharmaharshit2000"
-              class="github-link"
-              target="_blank"
+            <a href="https://github.com/sharmaharshit2000" target="_blank"
+              >github.com/sharmaharshit2000</a
             >
-              github.com/sharmaharshit2000
-            </a>
           </div>
         </div>
 
         <div class="btn-box">
-          <a href="resume/HarshitSharma_InternshalaResume.pdf" target="_blank" class="btn">Download CV</a>
-          <a href="#" class="btn">Hire Me Now!</a>
+          <a href="resume/Harshit Resume.pdf" class="btn btn-primary" download>
+            <i class="bx bxs-download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="bx bxs-phone"></i> Hire Me Now!
+          </a>
         </div>
 
-        <div class="social-icons scroll-scale">
-          <a href=""><i class="bx bxl-facebook-circle"></i></a>
-          <a href=""><i class="bx bxl-instagram-alt"></i></a>
-          <a href=""><i class="bx bxl-twitter"></i></a>
-          <a href=""><i class="bx bxl-dribbble"></i></a>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/harshit-sharma-b93192199/"
+            target="_blank"
+          >
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://github.com/sharmaharshit2000" target="_blank">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://x.com/Harshit18697584" target="_blank">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a
+            href="https://stackoverflow.com/users/25127424/harshit-sharma"
+            target="_blank"
+          >
+            <i class="bx bxl-stack-overflow"></i>
+          </a>
+          <a href="https://leetcode.com/u/9yYBVJNuDt/" target="_blank">
+            <i class="bx bx-code"></i>
+          </a>
         </div>
       </div>
       <div class="home-image">
-        <div class="img-box">
-          <img src="img/man-home.png" alt="main" />
-        </div>
-        <div class="liquid-shape">
-          <svg
-            viewBox="0 0 500 500"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="100%"
-            id="blobSvg"
-          >
-            <path fill="#12f7ff">
-              <animate
-                attributeName="d"
-                dur="20000ms"
-                repeatCount="indefinite"
-                values="
-                M437,303Q434,356,390,386Q346,416,298,411Q250,406,209,398.5Q168,391,144,358Q120,325,82,287.5Q44,250,61.5,200.5Q79,151,111,108Q143,65,196.5,54.5Q250,44,304,54Q358,64,387.5,109Q417,154,428.5,202Q440,250,437,303Z;
-                M458,310Q458,370,405,398Q352,426,301,416Q250,406,205.5,405Q161,404,111.5,381Q62,358,51,304Q40,250,69,206Q98,162,122,115.5Q146,69,198,55Q250,41,311.5,39Q373,37,413,85Q453,133,455.5,191.5Q458,250,458,310Z;
-                M453,298Q415,346,392,401.5Q369,457,309.5,460.5Q250,464,193.5,455Q137,446,118,391.5Q99,337,75.5,293.5Q52,250,44,188Q36,126,97.5,109Q159,92,204.5,50Q250,8,308.5,27Q367,46,379.5,107Q392,168,441.5,209Q491,250,453,298Z;
-                M455,297Q412,344,369.5,363.5Q327,383,288.5,393Q250,403,211.5,393.5Q173,384,136,360.5Q99,337,88.5,293.5Q78,250,74.5,198.5Q71,147,106,104.5Q141,62,195.5,71Q250,80,312.5,57Q375,34,395.5,94Q416,154,457,202Q498,250,455,297Z;
-                M445,309Q455,368,407,403.5Q359,439,304.5,462Q250,485,190.5,470.5Q131,456,124.5,391Q118,326,72.5,288Q27,250,48.5,198Q70,146,102.5,98Q135,50,192.5,46.5Q250,43,292,73.5Q334,104,358.5,138.5Q383,173,409,211.5Q435,250,445,309Z;
-                M405.5,291.5Q394,333,374,381.5Q354,430,302,416.5Q250,403,200,413.5Q150,424,131.5,376.5Q113,329,78.5,289.5Q44,250,80.5,211.5Q117,173,142,139.5Q167,106,208.5,66.5Q250,27,293,63.5Q336,100,376.5,126.5Q417,153,417,201.5Q417,250,405.5,291.5Z;
-                M437,303Q434,356,390,386Q346,416,298,411Q250,406,209,398.5Q168,391,144,358Q120,325,82,287.5Q44,250,61.5,200.5Q79,151,111,108Q143,65,196.5,54.5Q250,44,304,54Q358,64,387.5,109Q417,154,428.5,202Q440,250,437,303Z;
-
-                "
-              ></animate>
-            </path>
-          </svg>
-        </div>
-        <div class="liquid-shape">
-          <svg
-            viewBox="0 0 500 500"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="100%"
-            id="blobSvg"
-          >
-            <path fill="#12f7ff">
-              <animate
-                attributeName="d"
-                dur="20000ms"
-                repeatCount="indefinite"
-                values="
-                  M437,303Q434,356,390,386Q346,416,298,411Q250,406,209,398.5Q168,391,144,358Q120,325,82,287.5Q44,250,61.5,200.5Q79,151,111,108Q143,65,196.5,54.5Q250,44,304,54Q358,64,387.5,109Q417,154,428.5,202Q440,250,437,303Z;
-                  M458,310Q458,370,405,398Q352,426,301,416Q250,406,205.5,405Q161,404,111.5,381Q62,358,51,304Q40,250,69,206Q98,162,122,115.5Q146,69,198,55Q250,41,311.5,39Q373,37,413,85Q453,133,455.5,191.5Q458,250,458,310Z;
-                  M453,298Q415,346,392,401.5Q369,457,309.5,460.5Q250,464,193.5,455Q137,446,118,391.5Q99,337,75.5,293.5Q52,250,44,188Q36,126,97.5,109Q159,92,204.5,50Q250,8,308.5,27Q367,46,379.5,107Q392,168,441.5,209Q491,250,453,298Z;
-                  M455,297Q412,344,369.5,363.5Q327,383,288.5,393Q250,403,211.5,393.5Q173,384,136,360.5Q99,337,88.5,293.5Q78,250,74.5,198.5Q71,147,106,104.5Q141,62,195.5,71Q250,80,312.5,57Q375,34,395.5,94Q416,154,457,202Q498,250,455,297Z;
-                  M445,309Q455,368,407,403.5Q359,439,304.5,462Q250,485,190.5,470.5Q131,456,124.5,391Q118,326,72.5,288Q27,250,48.5,198Q70,146,102.5,98Q135,50,192.5,46.5Q250,43,292,73.5Q334,104,358.5,138.5Q383,173,409,211.5Q435,250,445,309Z;
-                  M405.5,291.5Q394,333,374,381.5Q354,430,302,416.5Q250,403,200,413.5Q150,424,131.5,376.5Q113,329,78.5,289.5Q44,250,80.5,211.5Q117,173,142,139.5Q167,106,208.5,66.5Q250,27,293,63.5Q336,100,376.5,126.5Q417,153,417,201.5Q417,250,405.5,291.5Z;
-                  M437,303Q434,356,390,386Q346,416,298,411Q250,406,209,398.5Q168,391,144,358Q120,325,82,287.5Q44,250,61.5,200.5Q79,151,111,108Q143,65,196.5,54.5Q250,44,304,54Q358,64,387.5,109Q417,154,428.5,202Q440,250,437,303Z;
-  
-                  "
-              ></animate>
-            </path>
-          </svg>
-        </div>
+        <img src="./img/Harshit-profile.png" alt="Harshit Sharma" />
       </div>
     </section>
 
-    <!--about section--------------------------------------------------->
     <section id="about" class="about">
-      <div class="about-content scroll-scale">
-        <span>Let me intoduce myself</span>
+      <div class="section-title">
+        <span>Professional Summary</span>
         <h2>About Me</h2>
-        <h3>A Story of good</h3>
+      </div>
+      <div class="about-content">
         <p>
-          Aspiring Full-Stack Developer with a passion for building efficient,
-          user-friendly web applications. Proficient in front-end technologies
-          like React and Angular, and familiar with back-end frameworks such as
-          Node.js and Django. Skilled in creating APIs and managing databases
-          like MongoDB and MySQL. A quick learner with a strong foundation in
-          problem-solving and a keen interest in contributing to innovative,
-          scalable, and impactful projects.
+          I'm a MERN stack developer with expertise in JavaScript ecosystem. On
+          the frontend, I build responsive interfaces with React.js, Redux, and
+          modern CSS. For backend development, I create RESTful APIs with
+          Node.js and Express, and work with MongoDB for database management. I
+          follow best practices in code organization, testing, and deployment to
+          deliver high-quality applications.
         </p>
-        <div class="btn-box">
-          <a href="#" class="btn">Read More!</a>
+        <div class="skills-preview">
+          <div class="skill-tag">React.js</div>
+          <div class="skill-tag">Node.js</div>
+          <div class="skill-tag">Express</div>
+          <div class="skill-tag">MongoDB</div>
+          <div class="skill-tag">Redux</div>
+          <div class="skill-tag">REST APIs</div>
+          <div class="skill-tag">JavaScript</div>
+          <div class="skill-tag">HTML5</div>
+          <div class="skill-tag">CSS3</div>
+          <div class="skill-tag">Git</div>
         </div>
       </div>
     </section>
-    <!--service section--------------------------------------------------->
-    <section id="services" class="services">
-      <div class="main-text scroll-scale">
-        <span>what i will do for you</span>
-        <h2>Our Services</h2>
-      </div>
 
-      <div class="section-services scroll-bottom">
-        <div class="service-box">
-          <i class="bx bxs-layer service-icon"></i>
-          <h3>Full Stack Development</h3>
-          <p>
-            I specialize in building responsive interfaces, developing robust
-            back-end systems, and integrating APIs for seamless functionality.
-            With expertise in database management and cloud deployment.
-          </p>
-          <div class="btn-box service-btn">
-            <a href="" class="btn">Read More</a>
-          </div>
-        </div>
-        <div class="service-box">
-          <i class="bx bx-desktop service-icon"></i>
-          <h3>Frontend Development</h3>
-          <p>
-            I create responsive and user-friendly interfaces using HTML, CSS,
-            and JavaScript frameworks like React . I focus on delivering
-            visually appealing designs optimized for performance and
-            cross-browser compatibility.
-          </p>
-          <div class="btn-box service-btn">
-            <a href="" class="btn">Read More</a>
-          </div>
-        </div>
-        <div class="service-box">
-          <i class="bx bx-code-alt service-icon"></i>
-          <h3>Backend Development</h3>
-          <p>
-            I design and develop server-side logic using technologies like
-            Node.js, Django, and Express.js. I focus on creating robust APIs,
-            managing databases (SQL/NoSQL), and ensuring efficient data storage
-            and retrieval.
-          </p>
-          <div class="btn-box service-btn">
-            <a href="" class="btn">Read More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--skill section------------------------------------------------------->
-
-    <section id="skills" class="skills">
-      <div class="main-text scroll-scale">
-        <span>technical and professional</span>
+    <section id="skills" class="skills bg-primary">
+      <div class="section-title">
+        <span>Technical Expertise</span>
         <h2>My Skills</h2>
       </div>
-
       <div class="skill-main">
-        <div class="skill-left scroll-scale">
+        <div class="skill-left">
           <h3>Technical Skills</h3>
-
-          <div class="skill-bar">
-            <div class="info">
-              <p>HTML</p>
-              <p>72%</p>
-            </div>
-            <div class="bar">
-              <span class="html"></span>
-            </div>
-          </div>
-
-          <div class="skill-bar">
-            <div class="info">
-              <p>CSS</p>
-              <p>60%</p>
-            </div>
-            <div class="bar">
-              <span class="css"></span>
-            </div>
-          </div>
-
           <div class="skill-bar">
             <div class="info">
               <p>JavaScript</p>
+              <p>85%</p>
+            </div>
+            <div class="bar">
+              <span style="width: 85%"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>React.js</p>
               <p>80%</p>
             </div>
             <div class="bar">
-              <span class="javascript"></span>
+              <span style="width: 80%"></span>
             </div>
           </div>
-
           <div class="skill-bar">
             <div class="info">
-              <p>React</p>
-              <p>68%</p>
+              <p>Node.js</p>
+              <p>75%</p>
             </div>
             <div class="bar">
-              <span class="react"></span>
+              <span style="width: 75%"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>MongoDB</p>
+              <p>70%</p>
+            </div>
+            <div class="bar">
+              <span style="width: 70%"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>HTML & CSS</p>
+              <p>90%</p>
+            </div>
+            <div class="bar">
+              <span style="width: 90%"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>Git & GitHub</p>
+              <p>88%</p>
+            </div>
+            <div class="bar">
+              <span style="width: 88%"></span>
             </div>
           </div>
         </div>
-        <div class="skill-right scroll-scale">
+        <div class="skill-right">
           <h3>Professional Skills</h3>
           <div class="professional">
             <div class="box">
-              <div class="circle" data-dots="80" data-percent="80"></div>
-
               <div class="text">
                 <big>90%</big>
-                <small>Team Work</small>
+                <small>Problem Solving</small>
               </div>
             </div>
-
             <div class="box">
-              <div class="circle" data-dots="80" data-percent="90"></div>
-
+              <div class="text">
+                <big>85%</big>
+                <small>Code Quality</small>
+              </div>
+            </div>
+            <div class="box">
               <div class="text">
                 <big>80%</big>
-                <small>Creativity</small>
+                <small>Team Collaboration</small>
               </div>
             </div>
-
             <div class="box">
-              <div class="circle" data-dots="80" data-percent="60"></div>
-
               <div class="text">
-                <big>60%</big>
-                <small>Project Managment</small>
-              </div>
-            </div>
-
-            <div class="box">
-              <div class="circle" data-dots="80" data-percent="70"></div>
-
-              <div class="text">
-                <big>70%</big>
-                <small>Communication</small>
+                <big>75%</big>
+                <small>Project Management</small>
               </div>
             </div>
           </div>
@@ -302,219 +219,402 @@
       </div>
     </section>
 
-    <!-- certifications section --------------------------------->
-    <!-- certifications section -->
-    <section id="certifications" class="certifications">
-      <div class="main-text scroll-scale">
-        <span>My Achievements</span>
+    <section id="projects" class="portfolio">
+      <div class="section-title">
+        <span>My Work</span>
+        <h2>Recent Projects</h2>
+      </div>
+      <div class="filter-buttons">
+        <button class="btn active" data-filter="all">All</button>
+        <button class="btn" data-filter="mern">MERN</button>
+        <button class="btn" data-filter="react">React</button>
+        <button class="btn" data-filter="node">Node.js</button>
+      </div>
+      <div class="protfolio-gallery">
+        <div class="port-box" data-filter="mern">
+          <div class="port-image">
+            <img
+              src="./projects/shoppyGlobe.png"
+              alt="ShoppyGlobe E-commerce Platform"
+            />
+          </div>
+          <div class="port-content">
+            <h3>ShoppyGlobe E-commerce App</h3>
+            <p>
+              A full-stack e-commerce web app supporting product listings, cart,
+              orders, and user login functionality.
+            </p>
+            <div class="port-links">
+              <a
+                href="https://shoppyglobe-full-stack.vercel.app/"
+                target="_blank"
+              >
+                <i class="bx bx-link-external"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/sharmaHarshit2000/shoppyglobe-fullStack"
+                target="_blank"
+              >
+                <i class="bx bxl-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-box" data-filter="mern">
+          <div class="port-image">
+            <img src="./projects/mytube.png" alt="YouTube Clone" />
+          </div>
+          <div class="port-content">
+            <h3>YouTube Clone</h3>
+            <p>
+              A full-featured YouTube Clone built using the MERN stack with user
+              authentication, video management, and more.
+            </p>
+            <div class="port-links">
+              <a href="https://mytubefrontend.vercel.app/" target="_blank">
+                <i class="bx bx-link-external"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/sharmaHarshit2000/YouTube-Clone"
+                target="_blank"
+              >
+                <i class="bx bxl-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-box" data-filter="mern">
+          <div class="port-image">
+            <img src="./projects/url_shortener.png" alt="URL Shortener" />
+          </div>
+          <div class="port-content">
+            <h3>URL Shortener</h3>
+            <p>
+              A simple and functional URL shortener built with the MERN stack,
+              featuring click tracking.
+            </p>
+            <div class="port-links">
+              <a
+                href="https://url-shortener-topaz-six.vercel.app/"
+                target="_blank"
+              >
+                <i class="bx bx-link-external"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/sharmaHarshit2000/url-shortener"
+                target="_blank"
+              >
+                <i class="bx bxl-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-box" data-filter="react">
+          <div class="port-image">
+            <img
+              src="./projects/online_library.png"
+              alt="Online Library System"
+            />
+          </div>
+          <div class="port-content">
+            <h3>Online Library System</h3>
+            <p>
+              A React-based web application for Browse, searching, and managing
+              books with Redux for state management.
+            </p>
+            <div class="port-links">
+              <a
+                href="https://library-online-book.netlify.app/"
+                target="_blank"
+              >
+                <i class="bx bx-link-external"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/sharmaHarshit2000/Online-Library-System"
+                target="_blank"
+              >
+                <i class="bx bxl-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-box" data-filter="javascript">
+          <div class="port-image">
+            <img src="./projects/weather_app.png" alt="Weather Forecast App" />
+          </div>
+          <div class="port-content">
+            <h3>Weather Forecast App</h3>
+            <p>
+              A frontend application fetching real-time weather data from
+              OpenWeatherMap API with a responsive UI.
+            </p>
+            <div class="port-links">
+              <a
+                href="https://apps-weather-forecast.netlify.app/"
+                target="_blank"
+              >
+                <i class="bx bx-link-external"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/sharmaHarshit2000/Weather-App"
+                target="_blank"
+              >
+                <i class="bx bxl-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-box" data-filter="javascript">
+          <div class="port-image">
+            <img
+              src="./projects/student_registration.png"
+              alt="Student Registration System"
+            />
+          </div>
+          <div class="port-content">
+            <h3>Student Registration System</h3>
+            <p>
+              A simple web app for student registration built using HTML, CSS,
+              and JavaScript with dynamic form validation.
+            </p>
+            <div class="port-links">
+              <a
+                href="https://registrationformstudent.netlify.app/"
+                target="_blank"
+              >
+                <i class="bx bx-link-external"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/sharmaHarshit2000/Student-Registration-System"
+                target="_blank"
+              >
+                <i class="bx bxl-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="certifications bg-alt">
+      <div class="section-title">
+        <span>My Credentials</span>
         <h2>Certifications</h2>
       </div>
-
-      <div class="container">
-        <div class="certification-gallery scroll-bottom">
-          <!-- Certification 1 -->
-          <div class="cert-box">
-            <div class="cert-image">
-              <img
-                src="certifications/HTML&CSS.PNG"
-                alt="HTML & CSS Certification"
-              />
-            </div>
-            <div class="cert-content">
-              <h3>HTML and CSS</h3>
-              <p>Issued by Internshala • May 2024</p>
-              <a
-                href="certifications/HTML&CSS.pdf"
-                class="cert-link"
-                target="_blank"
-              >
-                <i class="bx bx-link-external"></i> View Full Certificate
-              </a>
-            </div>
+      <div class="certifications-container">
+        <div class="certification-card">
+          <div class="cert-image">
+            <img
+              src="./certifications//Node.js Express.js and MongoDB.png"
+              alt="Mastering Node.js, Express.js and MongoDB Certificate"
+            />
           </div>
-
-          <!-- Certification 2 -->
-          <div class="cert-box">
-            <div class="cert-image">
-              <img
-                src="certifications/JavaScript.PNG"
-                alt="JavaScript Certification"
-              />
+          <div class="cert-content">
+            <h3>Mastering Node.js, Express.js and MongoDB</h3>
+            <div class="cert-meta">
+              <span>INTERNSHALA TRAININGS</span>
+              <span>Issued: Jun 2025</span>
             </div>
-            <div class="cert-content">
-              <h3>JavaScript Mastery</h3>
-              <p>Issued by Internshala • December 2024</p>
-              <a
-                href="certifications/JavaScript.pdf"
-                class="cert-link"
-                target="_blank"
-              >
-                <i class="bx bx-link-external"></i> View Full Certificate
-              </a>
-            </div>
+            <a
+              href="certifications/Mastering Node.js, Express.js and MongoDB Training - Certificate of Completion.pdf"
+              class="cert-link"
+              target="_blank"
+              download
+              >View Certificate <i class="bx bx-link-external"></i
+            ></a>
           </div>
+        </div>
 
-          <!-- Certification 3 -->
-          <div class="cert-box">
-            <div class="cert-image">
-              <img
-                src="certifications/React.PNG"
-                alt="React Design Certification"
-              />
+        <div class="certification-card">
+          <div class="cert-image">
+            <img
+              src="./certifications/Full-Stack.png"
+              alt="Full Stack Development Certificate"
+            />
+          </div>
+          <div class="cert-content">
+            <h3>Full Stack Development</h3>
+            <div class="cert-meta">
+              <span>INTERNSHALA TRAININGS</span>
+              <span>Issued: Jun 2025</span>
             </div>
-            <div class="cert-content">
-              <h3>Frontend using React</h3>
-              <p>Issued by Internshala • April 2025</p>
-              <a
-                href="certifications/React.pdf"
-                class="cert-link"
-                target="_blank"
-              >
-                <i class="bx bx-link-external"></i> View Full Certificate
-              </a>
+            <a
+              href="certifications/Full Stack Development - Certificate of Graduation.pdf"
+              class="cert-link"
+              target="_blank"
+              download
+              >View Certificate <i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="certification-card">
+          <div class="cert-image">
+            <img
+              src="./certifications//React.png"
+              alt="Building Modern Web Applications Using React Certificate"
+            />
+          </div>
+          <div class="cert-content">
+            <h3>Building Modern Web Applications Using React</h3>
+            <div class="cert-meta">
+              <span>INTERNSHALA TRAININGS</span>
+              <span>Issued: Apr 2025</span>
             </div>
+            <a
+              href="certifications/Building Modern Web Applications Using React Training - Certificate of Completion.pdf"
+              class="cert-link"
+              target="_blank"
+              download
+              >View Certificate <i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="certification-card">
+          <div class="cert-image">
+            <img
+              src="./certifications/JavaScript.png"
+              alt="DSA in JavaScript Certificate"
+            />
+          </div>
+          <div class="cert-content">
+            <h3>Data Structures and Algorithms (DSA) in JavaScript - I</h3>
+            <div class="cert-meta">
+              <span>INTERNSHALA TRAININGS</span>
+              <span>Issued: Jan 2025</span>
+            </div>
+            <a
+              href="certifications/Cracking the Code_ Data Structures and Algorithms (DSA) in JavaScript - I Training - Certificate of Completion.pdf"
+              class="cert-link"
+              target="_blank"
+              download
+              >View Certificate <i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="certification-card">
+          <div class="cert-image">
+            <img
+              src="./certifications/DSA.png"
+              alt="Developing Interactive Websites with JavaScript Certificate"
+            />
+          </div>
+          <div class="cert-content">
+            <h3>Developing Interactive Websites with JavaScript</h3>
+            <div class="cert-meta">
+              <span>INTERNSHALA TRAININGS</span>
+              <span>Issued: Dec 2024</span>
+            </div>
+            <a
+              href="certifications/Developing Interactive Websites with JavaScript Training - Certificate of Completion.pdf"
+              class="cert-link"
+              target="_blank"
+              download
+              >View Certificate <i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="certification-card">
+          <div class="cert-image">
+            <img
+              src="./certifications/HTML and CSS .png"
+              alt="HTML CSS Certificate"
+            />
+          </div>
+          <div class="cert-content">
+            <h3>Designing Web Pages Using HTML and CSS</h3>
+            <div class="cert-meta">
+              <span>INTERNSHALA TRAININGS</span>
+              <span>Issued: Nov 2024</span>
+            </div>
+            <a
+              href="certifications/Designing Web Pages Using HTML and CSS Training - Certificate of Completion.pdf"
+              class="cert-link"
+              target="_blank"
+              download
+              >View Certificate <i class="bx bx-link-external"></i
+            ></a>
           </div>
         </div>
       </div>
     </section>
 
-    <!--portfolio section------------------------------------------------------->
-    <section id="portfolio" class="portfolio">
-      <div class="main-text scroll-scale">
-        <span>What i will do for you</span>
-        <h2>Latest Project</h2>
-      </div>
-
-      <div class="container">
-        <div class="filter-buttons scroll-scale">
-          <button class="btn">All</button>
-          <button class="btn">Product</button>
-          <button class="btn">Interacting</button>
-          <button class="btn">Web App</button>
-        </div>
-        <div class="protfolio-gallery scroll-bottom">
-          <div class="port-box">
-            <div class="port-image">
-              <img src="img/1.jpg" alt="image-1" />
-            </div>
-            <div class="port-content">
-              <h3>Graphic Designing</h3>
-              <p>
-                Graphic design involves creating visually engaging content to
-                communicate ideas and messages through digital and print media.
-              </p>
-              <a href="#"><i class="bx bx-link-external"></i></a>
-            </div>
-          </div>
-
-          <div class="port-box">
-            <div class="port-image">
-              <img src="img/2.jpg" alt="image-2" />
-            </div>
-            <div class="port-content">
-              <h3>Software Development</h3>
-              <p>
-                Software development involves designing, coding, testing, and
-                maintaining applications to solve problems and meet user needs.
-              </p>
-              <a href="#"><i class="bx bx-link-external"></i></a>
-            </div>
-          </div>
-
-          <div class="port-box">
-            <div class="port-image">
-              <img src="img/3.jpg" alt="image-3" />
-            </div>
-            <div class="port-content">
-              <h3>Frontend Development</h3>
-              <p>
-                Front-end development focuses on building and optimizing the
-                visual and interactive elements of websites and applications for
-                seamless user experiences.
-              </p>
-              <a href="#"><i class="bx bx-link-external"></i></a>
-            </div>
-          </div>
-
-          <div class="port-box">
-            <div class="port-image">
-              <img src="img/4.jpg" alt="image-4" />
-            </div>
-            <div class="port-content">
-              <h3>UI/UX Designer</h3>
-              <p>
-                UI/UX design involves creating intuitive interfaces and seamless
-                user experiences by focusing on usability, aesthetics, and
-                user-centered design principles.
-              </p>
-              <a href="#"><i class="bx bx-link-external"></i></a>
-            </div>
-          </div>
-
-          <div class="port-box">
-            <div class="port-image">
-              <img src="img/5.jpg" alt="image-5" />
-            </div>
-            <div class="port-content">
-              <h3>Web Development</h3>
-              <p>
-                Web applications are interactive software programs accessible
-                through web browsers, designed to provide dynamic functionality
-                and seamless user experiences across devices.
-              </p>
-              <a href="#"><i class="bx bx-link-external"></i></a>
-            </div>
-          </div>
-
-          <div class="port-box">
-            <div class="port-image">
-              <img src="img/6.jpg" alt="image-6" />
-            </div>
-            <div class="port-content">
-              <h3>Game Development</h3>
-              <p>
-                Game development involves designing, coding, and creating
-                interactive digital games using programming, art, and
-                storytelling to deliver engaging user experiences across
-                platforms.
-              </p>
-              <a href="#"><i class="bx bx-link-external"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Contact section------------------------------------->
-    <section id="contact" class="contact">
-      <div class="main-text scroll-scale">
-        <span>ask me a question</span>
+    <section id="contact" class="contact bg-primary">
+      <div class="section-title">
+        <span>Get in Touch</span>
         <h2>Contact Me</h2>
       </div>
 
-      <form action="#" class="scroll-bottom">
-        <input type="text" placeholder="Your Name" name="Name" />
-        <input type="email" placeholder="Your Email" name="Email" />
-        <input type="text" placeholder="Your Address" name="Address" />
-        <input type="number" placeholder="Phone Number" name="Number" />
-        <textarea
-          name="Message"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
-        <div class="btn-box formBtn">
-          <button type="submit" class="btn">Send Meesage</button>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" class="form-control" required />
         </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
       </form>
+
+      <div id="success-message" class="success-message">
+        <i class="bx bxs-check-circle"></i>
+        <h3>Thank You!</h3>
+        <p>
+          Your message has been sent successfully. I'll get back to you soon.
+        </p>
+        <a href="#home" class="btn btn-primary">Back to Home</a>
+      </div>
     </section>
-    <!--footer section---------------------------------->
+
     <footer>
-      <p class="scroll-scale">
-        Copyright &copy; 2024 by Coder Enthusiastic || All Rights Reserved.
-      </p>
-      <a href="#home"><i class="bx bxs-arrow-from-bottom"></i></a>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="social-icons">
+        <a href="https://www.linkedin.com/in/harshit-sharma-b93192199/" target="_blank">
+            <i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="https://github.com/sharmaharshit2000" target="_blank">
+            <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://x.com/Harshit18697584" target="_blank">
+            <i class="bx bxl-twitter"></i>
+        </a>
+        <a href="https://stackoverflow.com/users/25127424/harshit-sharma" target="_blank">
+            <i class="bx bxl-stack-overflow"></i>
+        </a>
+        <a href="https://leetcode.com/u/9yYBVJNuDt/" target="_blank">
+            <i class="bx bx-code"></i>
+        </a>
+    </div>
+     <p class="copyright">
+    © <span id="current-year"></span> Harshit Sharma. All rights reserved.
+  </p>
     </footer>
 
-    <script src="./script.js"></script>
+   <script src="./script.js"></script>
   </body>
 </html>
