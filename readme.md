@@ -8,7 +8,7 @@ A modern, responsive **portfolio website** to showcase my **projects**, **skills
 
 - 👉 [Visit the Portfolio Website](https://portfolios-personals.netlify.app/)
 - 📦 [GitHub Repository](https://github.com/sharmaHarshit2000/Portfolio-Website)
-- 🧾 [Resume (PDF)](./resume/Harshit Resume.pdf)
+- 🧾 [Resume (PDF)](./resume/Harshit-Resume.pdf)
 
 ---
 
